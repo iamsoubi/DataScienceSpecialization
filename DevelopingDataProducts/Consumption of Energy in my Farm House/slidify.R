@@ -1,0 +1,11 @@
+install.packages("devtools")
+library(devtools)
+install_github('slidify','ramnathv')
+install_github('slidifyLibraries', 'ramnathv')
+library(slidify)
+getwd()
+setwd("~/sample/project/")
+author("Consumption of Energy in my Farm House")
+slidify("index.Rmd")
+browseURL("index.html")
+
